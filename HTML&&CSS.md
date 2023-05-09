@@ -1,4 +1,5 @@
-## 纯css画梯形
+## Pure CSS to draw a trapezoid
+纯CSS梯形
 
 ```
 {
@@ -10,7 +11,8 @@
 
 
 
-## 页面内容横向滚动
+## Horizontal Scroll of Page Content
+页面内容横向滚动
 
 ```
 <div class="container">
@@ -34,7 +36,8 @@
 }
 ```
 
-## 背景色渐变动画
+## Create Gradient Animation Using Background
+背景色渐变动画
 
 ```
 <div class="container"></div>
@@ -79,13 +82,17 @@
 }
 ```
 
-## 移动端 line-height 不同手机效果不一
+## Different Effects of Line-Height on Mobile Devices
+
+移动端 line-height 不同手机效果不一
 
 ```
+For containers with a relatively large height, it is better to set the line-height to the height value plus 1px. This approach can achieve good display effects on both Android and iOS platforms.
 对于比较大高度的容器，最好把 line-height 设置为高度+1px ，安卓和ios显示都还不错
 ```
 
-## 一行省略
+## Ellipsis in One Line
+一行省略
 
 ```
 <div class="demo"></div>
@@ -99,7 +106,8 @@
 }
 ```
 
-## 多行省略
+## Ellipsis in Multiple Line
+多行省略
 
 ```
 <div class="demo"></div>
@@ -117,8 +125,10 @@
 尽量把高度写死， -webkit-line-clamp 属性偶尔成功偶尔失效
 ```
 
-## 图片过滤效果（一些图片好看的阴影...）
-https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+## Image Filter Effect
+图片过滤效果
+
+Some Beautiful Shadow Effects for Images：https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 
 ```
 <img class="demo">
@@ -133,14 +143,16 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 ```
 
 
-## app IOS 中js内嵌页面滑动效果卡顿
+## Solve the Issue of Lagging Scrolling on JS Embedded Pages in IOS App
+app IOS 中js内嵌页面滑动效果卡顿
 ```
 .scrollView {
     -webkit-overflow-scrolling : touch; // 加上这个IOS顺滑的实现
 }
 ```
 
-## 瀑布流布局
+## Solutions for Waterfall Flow Layout
+瀑布流布局
 ```
 /*
 * 使用multi-columns
@@ -194,11 +206,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 }
 ```
 
-## css 段落首行突出
+## CSS for Handling First Line Indentation in Paragraphs
+css 段落首行突出
 ```
 <div class="main">
-  <p>·预付10%金额即可获取计划资格。</p>
-  <p>·预付认购后，系统会智能匹配合适机票，通知你进行支付出票。</p>
+  <p>·Something...</p>
+  <p>·Something...</p>
 </div>
 .main {
   padding-left 5px
@@ -208,7 +221,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 }
 ```
 
-## 极个别手机父元素display为flex是子元素没有默认处理flex属性，最好子元素手动设一下默认
+## In some rare cases, on certain mobile devices, when the parent element is set to display:flex, the child elements may not be displayed with default flex properties. It is better to manually set the default flex properties for the child elements in such cases.
+极个别手机父元素display为flex是子元素没有默认处理flex属性，最好子元素手动设一下默认
 ```
 <div class="main">
   <div :class="child"></div>
