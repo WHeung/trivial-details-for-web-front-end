@@ -1,1 +1,1 @@
-## 记录一些前端小细节
+## Record some front-end details
