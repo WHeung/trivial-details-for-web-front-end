@@ -1,5 +1,6 @@
 
-## 正则表达式匹配但不捕获
+## Regular expression to match but not capture
+正则表达式匹配但不捕获
 
 ### String.match(RegExp)
 
@@ -10,7 +11,7 @@
 'abc'.match(/a(b)c/)[1]     // 得到 ['b']
 'abc'.match( /a(b)c/g)     // 得到 ['abc']
 
-/*要使用全局匹配的话需要先分组抽出内容 , 再每组使用 match 查找或者 replace 替换
+/* If you want to use global matching, you need to extract the content in groups first, and then use match to find or replace to replace each group. (要使用全局匹配的话需要先分组抽出内容 , 再每组使用 match 查找或者 replace 替换)
 */
 var html = '<p>内容1</p>\n<p>内容2</p>\n<p>内容3</p>'
 html = html.match(/<[^>]+>[^<]*<\/[^>]+>/ig) // ["<p>内容1</p>", "<p>内容2</p>", "<p>内容3</p>"]
@@ -40,7 +41,8 @@ while((item = RegExp.exec(html)) !== null) {
 } //得到 ["内容1", "内容2", "内容3"]
 ```
 
-### 表单range双滑块区间组件
+### Form range double slider interval component
+表单range双滑块区间组件
 ```
 <!DOCTYPE html>
 <html>
@@ -121,9 +123,11 @@ var change=function(o,e){
 </html>
 ```
 
-## JSON.parse的坑
+## Pitfalls of JSON.parse
+JSON.parse的坑
 
-### JSON.parse数字或数字形字符串时会进行一定程度的四舍五入
+### Some degree of rounding is performed when JSON.parse numbers or numeric strings
+JSON.parse数字或数字形字符串时会进行一定程度的四舍五入
 ```
 JSON.parse('171226103549893567955') // 171226103549893570000
 JSON.parse(171226103549893567955) // 171226103549893570000
